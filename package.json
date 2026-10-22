@@ -1,0 +1,17 @@
+{
+  "name": "cron-words",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Convert plain English schedules to cron expressions. React + Node.",
+  "scripts": {
+    "setup": "npm install && npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -k -n api,web -c \"#fb5721,#8a8a8a\" \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server start",
+    "test": "npm --prefix server test"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

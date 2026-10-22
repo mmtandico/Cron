@@ -1,4 +1,7 @@
-/* ---------- Fonts: Power Type (local, licensed) with free fallbacks ---------- */
+/* ---------- Fonts ----------
+   To use licensed Power Type fonts, drop your .woff files into client/public/fonts/
+   and uncomment the @font-face rules below. */
+/*
 @font-face {
   font-family: 'BaseNeue';
   src: url('/fonts/bn-r.woff2') format('woff2'), url('/fonts/bn-r.woff') format('woff');
@@ -29,12 +32,13 @@
   font-weight: 700;
   font-display: swap;
 }
+*/
 
 /* ---------- Tokens ---------- */
 :root {
-  --font-sans: 'BaseNeue', 'Inter Tight', system-ui, -apple-system, sans-serif;
-  --font-dot: 'OffBit Dot', 'Doto', ui-monospace, monospace;
-  --font-pixel: 'OffBit', 'Doto', ui-monospace, monospace;
+  --font-sans: 'Inter Tight', system-ui, -apple-system, sans-serif;
+  --font-dot: 'Doto', ui-monospace, monospace;
+  --font-pixel: 'Doto', ui-monospace, monospace;
   --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Consolas, monospace;
 
   --bg: hsl(0 0% 4%);
